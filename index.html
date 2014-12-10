@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Test</title>
+	<script src="timeFormat.js" type="text/javascript"></script>
+</head>
+<body>
+	<h1 id="all"></h1>
+	<h1 id="minutes"> </h1>
+	<h1 id="seconds"> </h1>
+	<script>
+		var t = 5689;
+		document.getElementById('all').innerHTML = timeFormat(t, {
+			format: "seconds",
+			hours: true,
+			minutes: true
+		});
+		t = 1234;
+		document.getElementById('minutes').innerHTML = timeFormat(t, {
+			format: "seconds",
+			minutes: true,
+			seconds: true
+		});
+		t = 12340;
+		document.getElementById('seconds').innerHTML = timeFormat(t, {
+			format: "milliseconds",
+			seconds: true,
+			milliseconds: true
+		});
+
+	</script>
+</body>
+</html>
