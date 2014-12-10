@@ -2,14 +2,14 @@
 
 Just a quick JS code to format time
 
-##usage
+##Usage
 
 
-''' javascript
+``` javascript
 var time = 5475
 var text = timeFormat (time, {
 	format: "seconds",
 	hours: true,
 	minutes: true
 });
-'''
+```
